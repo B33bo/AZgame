@@ -160,6 +160,6 @@ public class Game : MonoBehaviour
     public void Quit()
     {
         Menu.CanvasAnimator.Play("Exit");
-        TimedEvents.RunAfterTime(() => SceneManager.LoadScene("Selection"), .75f);
+        TimedEvents.RunAfterTime(() => SceneManager.LoadScene("Selection"), .7f);
     }
 }
