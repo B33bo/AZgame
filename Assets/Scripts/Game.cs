@@ -19,9 +19,6 @@ public class Game : MonoBehaviour
     private List<string> words;
     private int hintCurrent;
 
-    [SerializeField]
-    Animator PartyPoppers;
-
     void Awake()
     {
         FindWords();
@@ -139,12 +136,12 @@ public class Game : MonoBehaviour
     {
         print("WIN");
         text.text = "You Win!";
-        PartyPoppers.Play("win");
+        Champagne.Play();
 
         TimedEvents.RunAfterTime(() =>
         {
             SceneManager.LoadScene("Selection");
-        }, 5);
+        }, 10);
     }
 
     public void InsertHint()

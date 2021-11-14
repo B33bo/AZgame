@@ -114,6 +114,9 @@ namespace b33bo.dev
                 case "forcecrash":
                     UnityEngine.Diagnostics.Utils.ForceCrash(SafeGet(1, Params, UnityEngine.Diagnostics.ForcedCrashCategory.Abort));
                     return "NUKED";
+                case "win":
+                    GameObject.FindObjectOfType<Game>().Win();
+                    return "won";
             }
         }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 using b33bo.timedEvents;
 
@@ -37,6 +38,15 @@ public class Menu : MonoBehaviour
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
-        }, 1.5f);
+        }, .7f);
+    }
+
+    public void LoadScene(string Scene)
+    {
+        anim.Play("Exit");
+        TimedEvents.RunAfterTime(() =>
+        {
+            SceneManager.LoadScene(Scene);
+        }, .7f);
     }
 }
