@@ -12,9 +12,14 @@ public class Menu : MonoBehaviour
     [SerializeField]
     Animator anim;
 
+    public static float AnimSpeed { get; private set; }
+
     void Awake()
     {
         CanvasAnimator = anim;
+
+        AnimSpeed = PlayerPrefs.GetFloat("AnimationSpeed", 1.5f);
+        anim.SetFloat("AnimationSpeed", AnimSpeed);
     }
 
     public void OpenFolder(string folder)
@@ -38,7 +43,7 @@ public class Menu : MonoBehaviour
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
-        }, .7f);
+        }, 1 / AnimSpeed);
     }
 
     public void LoadScene(string Scene)
@@ -47,6 +52,20 @@ public class Menu : MonoBehaviour
         TimedEvents.RunAfterTime(() =>
         {
             SceneManager.LoadScene(Scene);
-        }, .7f);
+        }, 1 / AnimSpeed);
+    }
+
+    public void ChangeVolume(float volume) =>
+        AudioListener.volume = volume;
+
+    bool isTestingVolume = false;
+    public void TestVolume(AudioClip testingSound)
+    {
+        if (isTestingVolume)
+            return;
+
+        isTestingVolume = true;
+        TimedEvents.RunAfterTime(() => isTestingVolume = false, testingSound.length);
+        AudioSource.PlayClipAtPoint(testingSound, Vector3.zero);
     }
 }

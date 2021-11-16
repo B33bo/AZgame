@@ -113,6 +113,6 @@ public class AZbutton : MonoBehaviour
             SelectedGameName = text.text;
             SelectedGamePath = Filename;
             SceneManager.LoadScene("Game");
-        }, .7f);
+        }, 1 / Menu.AnimSpeed);
     }
 }

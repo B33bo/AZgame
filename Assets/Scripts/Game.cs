@@ -19,7 +19,7 @@ public class Game : MonoBehaviour
     private List<string> words;
     private int hintCurrent;
 
-    void Awake()
+    void Start()
     {
         FindWords();
         FindLetters();
@@ -95,11 +95,8 @@ public class Game : MonoBehaviour
         if (word.Length == 0)
             return;
 
-        if (letters.Count <= currentLetter)
-        {
-            Debug.LogError($"Wtf {currentLetter} {letters.Count}");
+        if (currentLetter == letters.Count)
             return;
-        }
 
         word = word.ToLower().Trim().Replace(" ", "");
         bool WordExist = words.Contains(word);
@@ -146,17 +143,14 @@ public class Game : MonoBehaviour
 
     public void InsertHint()
     {
+        if (wordsWithLetter.Count == 0)
+            return;
+
         inputField.text = wordsWithLetter[hintCurrent];
 
         hintCurrent++;
 
         if (hintCurrent >= wordsWithLetter.Count)
             hintCurrent = 0;
-    }
-
-    public void Quit()
-    {
-        Menu.CanvasAnimator.Play("Exit");
-        TimedEvents.RunAfterTime(() => SceneManager.LoadScene("Selection"), .7f);
     }
 }
