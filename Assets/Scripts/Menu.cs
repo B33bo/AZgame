@@ -68,4 +68,7 @@ public class Menu : MonoBehaviour
         TimedEvents.RunAfterTime(() => isTestingVolume = false, testingSound.length);
         AudioSource.PlayClipAtPoint(testingSound, Vector3.zero);
     }
+
+    public void DeleteAllData() =>
+        PlayerPrefs.DeleteAll();
 }

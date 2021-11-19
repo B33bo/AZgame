@@ -21,6 +21,8 @@ public class AZbutton : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private RectTransform rt;
     [SerializeField] private Image icon;
+    [SerializeField] private Image CompletedTick;
+    [SerializeField] private Sprite TickSprite;
 
     public static void Refresh()
     {
@@ -33,7 +35,7 @@ public class AZbutton : MonoBehaviour
         Vector2 currentPos = new Vector2(0, -200);
 
         //Scale = 512x, where x = number of posts
-        AZloader.Instance.ScrollThing.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, files.Count * 512);
+        AZloader.Instance.ScrollThing.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, (files.Count * 512) + 50);
 
         for (int i = 0; i < files.Count; i++)
         {
@@ -52,6 +54,7 @@ public class AZbutton : MonoBehaviour
     {
         List<string> files = new List<string>();
         sprites = new List<Sprite>();
+
         for (int i = 0; i < games.Count; i++)
         {
             files.Add(games[i].Path);
@@ -87,6 +90,9 @@ public class AZbutton : MonoBehaviour
 
     void Start()
     {
+        if (AZloader.SavedGames.Contains(Filename))
+            CompletedTick.sprite = TickSprite;
+
         instances.Add(this);
         string[] filenameSplit = Filename.Split('/', '\\');
 

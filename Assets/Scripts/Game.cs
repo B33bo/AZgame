@@ -134,6 +134,8 @@ public class Game : MonoBehaviour
         print("WIN");
         text.text = "You Win!";
         Champagne.Play();
+        AZloader.SavedGames.Add(AZbutton.SelectedGamePath);
+        PlayerPrefs.SetString("SaveGame", AZloader.SavedGames.ToFormattedString(";"));
 
         TimedEvents.RunAfterTime(() =>
         {
