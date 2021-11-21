@@ -22,6 +22,7 @@ public class AZbutton : MonoBehaviour
     [SerializeField] private RectTransform rt;
     [SerializeField] private Image icon;
     [SerializeField] private Image CompletedTick;
+    [SerializeField] private GameObject Christmas;
     [SerializeField] private Sprite TickSprite;
 
     public static void Refresh()
@@ -98,6 +99,9 @@ public class AZbutton : MonoBehaviour
 
         string newFile = filenameSplit[filenameSplit.Length - 1];
         text.text = GetFileName(newFile);
+
+        if (text.text.ToLower() != "christmas")
+            Destroy(Christmas);
     }
 
     static string GetFileName(string input)

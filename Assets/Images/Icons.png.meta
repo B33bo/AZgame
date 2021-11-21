@@ -41,6 +41,9 @@ TextureImporter:
   - first:
       213: 2514988542215765323
     second: Music
+  - first:
+      213: 3052315535316524931
+    second: Christmas
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -398,6 +401,27 @@ TextureImporter:
       bones: []
       spriteID: b4db2f011c807e220800000000000000
       internalID: 2514988542215765323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f92f8bec00c5a20800000000000000
+      internalID: 3052315535316524931
       vertices: []
       indices: 
       edges: []

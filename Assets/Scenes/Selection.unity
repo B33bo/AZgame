@@ -830,6 +830,8 @@ MonoBehaviour:
     icon: {fileID: 3220665290143086019, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
   - Path: games/music
     icon: {fileID: 2514988542215765323, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
+  - Path: games/christmas
+    icon: {fileID: 3052315535316524931, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
   template: {fileID: 526584049128519477, guid: e93d00aeb74a6a84997b0cf5b9f28d21, type: 3}
   ScrollThing: {fileID: 776837733}
   missingTexture: {fileID: 1161201145128540330, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
