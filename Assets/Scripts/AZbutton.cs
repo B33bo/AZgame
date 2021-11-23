@@ -36,7 +36,7 @@ public class AZbutton : MonoBehaviour
         Vector2 currentPos = new Vector2(0, -200);
 
         //Scale = 512x, where x = number of posts
-        AZloader.Instance.ScrollThing.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, (files.Count * 512) + 50);
+        AZloader.Instance.ScrollThing.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, (files.Count * 520) + 15);
 
         for (int i = 0; i < files.Count; i++)
         {
@@ -73,7 +73,7 @@ public class AZbutton : MonoBehaviour
 
                 files.Add(newFiles[i]);
 
-                Sprite newIcon = IMG2Sprite.Instance.LoadNewSprite(GetFileName(newFiles[i]) + ".png");
+                Sprite newIcon = IMG2Sprite.LoadNewSprite(GetFileName(newFiles[i]) + ".png");
 
                 if (newIcon == null)
                     sprites.Add(AZloader.Instance.missingTexture);
@@ -107,7 +107,11 @@ public class AZbutton : MonoBehaviour
     static string GetFileName(string input)
     {
         string[] splitByDots = input.Split('.');
-        return splitByDots.Sublist(0, splitByDots.Length).ToFormattedString(".");
+
+        if (splitByDots.Length == 1)
+            return splitByDots.ToFormattedString(".");
+
+        return splitByDots.Sublist(0, splitByDots.Length-1).ToFormattedString(".");
     }
 
     void OnDestroy()

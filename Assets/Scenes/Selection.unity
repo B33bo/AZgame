@@ -832,6 +832,12 @@ MonoBehaviour:
     icon: {fileID: 2514988542215765323, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
   - Path: games/christmas
     icon: {fileID: 3052315535316524931, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
+  - Path: games/space
+    icon: {fileID: -1772244045117237821, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
+  - Path: games/marvel
+    icon: {fileID: 5681967267464321869, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
+  - Path: games/Doom
+    icon: {fileID: -2319476694228375547, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
   template: {fileID: 526584049128519477, guid: e93d00aeb74a6a84997b0cf5b9f28d21, type: 3}
   ScrollThing: {fileID: 776837733}
   missingTexture: {fileID: 1161201145128540330, guid: d6feaa39b7b6d0440b4966927441686b, type: 3}
@@ -1300,6 +1306,10 @@ PrefabInstance:
     - target: {fileID: 526584049128519477, guid: e93d00aeb74a6a84997b0cf5b9f28d21, type: 3}
       propertyPath: m_Name
       value: Template
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748918940835259954, guid: e93d00aeb74a6a84997b0cf5b9f28d21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e93d00aeb74a6a84997b0cf5b9f28d21, type: 3}
