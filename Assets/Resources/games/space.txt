@@ -12,13 +12,14 @@ andromeda
 andromeda galaxy
 aries
 aquarius
+black hole
 big bang
 background radiation
 barycenter
 big crunch
-black hole
 black
 brown dwarf
+crater
 comet
 callisto
 capricorn
@@ -43,19 +44,18 @@ corona
 cosmic rays
 cosmonaught
 cosmonaut
-crater
 crust
 celsius
 centigrade
+dwarf planet
 dark matter
 deimos
-dwarf planet
 dwarf star
 dyson sphere
 day
+eclipse
 earth
 eagle nebula
-eclipse
 ellipse
 equator
 eros
@@ -64,18 +64,8 @@ earthquake
 europa
 exoplanet
 expanding universe
-falling star
-face on mars
-first qtr
-first quarter
-full
-full moon
-flat earth
-fusion
-fahrenheit
 galaxy
-gs
-g's
+g force
 galileo
 gibbous
 galactic
@@ -87,11 +77,13 @@ geocentric
 geocentria
 geography
 geyser
+gemini
 glycolaldehyde
 googol
 gravity
 gupiter
 gemini
+hubble
 halo
 halley's comet
 halley comet
@@ -105,28 +97,17 @@ helium
 hemisphere
 hercules
 horizon
-hubble
 hubble telescope
 hubble space telescope
 hybrid eclipse
 hypernova
-ice giant
-isotope
-ice age
-igneous rock
-ion
-iron
-inner planets
 jupiter
 janus
 joule
 jpl
-kuiper
-kuiper belt
-kelvin
-kepler
-laika
 lunar
+luna
+laika
 leo
 libra
 longitude
@@ -144,7 +125,7 @@ low tide
 lunar eclipse
 lunar rover
 luna
-
+meteor
 mars
 moon
 month
@@ -153,7 +134,6 @@ mare
 mars face
 matter
 mercury
-meteor
 meteorite
 meteoroid
 meteor shower
@@ -182,13 +162,13 @@ northern lights
 nova
 north star
 nuclear
+orbit
 oberon
 observatory
 occulation
 omega
 oort ckoud
 opposition
-orbit
 optical tuber
 orion
 outer planets
@@ -219,24 +199,6 @@ puck
 pulsar
 pythagoras
 pinwheel galaxy
-quantum
-quantum theory
-quark
-quasar
-quarter
-radio
-radio wavers
-radiant
-round earth
-red shift
-relativity
-revolve
-rhea
-rigel
-rings
-ring
-rotate
-rover
 saturn
 sagittarius
 sagittarius a
@@ -317,8 +279,7 @@ voyager
 voyager 1
 volcano
 virgin galactic
-virgin
-gemini
+wormhole
 weather
 wave
 watt
@@ -330,9 +291,9 @@ white dwarf
 white giant
 white hole
 wimp
-weakly interacting massive particles
 wind
-wormhole
+waxing
+waining
 waning crescent
 waning-crescent
 waningcrescent
@@ -345,18 +306,7 @@ waxing-gibbous
 waxing crescent
 waxingcrescent
 waxing-crescent
-x-ray
-x ray
-x-ray burster
-x ray burster
-x-ray astronomy
-x ray astronomy
 year
 ylem
 yellow dwarf
 yerkes observatory
-your anus
-zodiac
-zenith
-zeta orionis
-zodiacal light

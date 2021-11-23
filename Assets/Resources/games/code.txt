@@ -1,3 +1,4 @@
+[Difficulty=35]
 action script
 ada
 algol
@@ -15,8 +16,6 @@ cpp
 c plus plus
 c#
 c sharp
-c+
-c plus
 cobol
 CoffeeScript
 fortran
